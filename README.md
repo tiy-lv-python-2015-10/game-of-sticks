@@ -114,6 +114,11 @@ Player 1: How many sticks do you take (1-3)? 1
 Player 1, you lose.
 ```
 
+
+## Hard Mode
+
+In addition to the requirements from **Normal Mode**:
+
 ### Player vs AI
 
 Let's create an artificial intelligence player for the Game of Sticks. Instead
@@ -234,9 +239,6 @@ AI loses.
 Play again (y/n)? n
 ```
 
-## Hard Mode
-
-In addition to the requirements from **Normal Mode**:
 
 ### AI vs AI
 
