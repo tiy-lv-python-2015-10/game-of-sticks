@@ -1,21 +1,19 @@
-class random:
-    cooking = False
-    power = 100
-    time = 0
+print("Welcome to the Game of Sticks!")
 
-    def start(self, time, power):
-        if self.cooking:
-            raise ValueError("Microwave already in use")
-        self.time = time
-        self.power = power
-        self.cooking = True
+stick_num = []
+for sticks_num in range(10, 100):
 
-    def stop(self):
-        if not self.cooking:
-            raise ValueError("Microwave already stopped")
-        self.cooking = False
-        self.time = 0
-        self.power = 100
+    while sticks_num > 0:
+        remove = int(input("Take between (1-3) sticks"))
+        if remove > 4:
+            print("That's too many sticks")
+        elif remove < 1:
+            print("That's not enough sticks")
+        elif remove == 1 or 2 or 3:
+            stick_num -= remove
+        if sticks_num > 0:
+            print("you have ", {}, "sticks left")
 
-    def __str__(self):
-        return "Cooking: {} Power: {} Time: {}".format(self.cooking, self.power, self.time)
+    print("You lose")
+
+input()
